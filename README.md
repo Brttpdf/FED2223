@@ -305,7 +305,7 @@ website was nog niet 10000% responsive, dit was wel erg snel verholpen.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/eindresultaat.jpeg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindresultaat.jpg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -325,7 +325,7 @@ website was nog niet 10000% responsive, dit was wel erg snel verholpen.
   ### Dit was lastig/Is niet gelukt:
 
   ik vind het nog steeds erg lastig om html en css te lezen (aan elkaar te koppelen)
-  ik moet echt 3x kijken om te zien wat er nou precies allemaal staat en wat wat doet. Als ik er mee bezig ben gaat het wel, totdat ik ergens een probleem heb staamn 
+  ik moet echt 3x kijken om te zien wat er nou precies allemaal staat en wat wat doet. Als ik er mee bezig ben gaat het wel, totdat ik ergens een probleem heb staan 
   en terug moet zoeken in mijn code waar het nou precies mis gaat allemaal.
 
   ik vind responsiveness nog erg lastig om goed te krijgen. dit is me gelukkig wel gelukt
@@ -333,7 +333,7 @@ website was nog niet 10000% responsive, dit was wel erg snel verholpen.
   ik vind elementen positioneren nog steeds niet te doen.... 
   
   wat ik op heb kunnen leveren wat mijn site betreft ben ik erg trots op. ik had alleen wel meer tijd mogen besteden aan mijn proces verslag d.m.v. bijvoorbeeld 
-   plaatsjes en voorbeelden, hier ben ik mij van bewust.§
+   plaatsjes en voorbeelden, hier ben ik mij van bewust.
 
 
 </details>
@@ -356,6 +356,7 @@ website was nog niet 10000% responsive, dit was wel erg snel verholpen.
   5. https://dlo.mijnhva.nl/d2l/le/content/437099/Home. ik ben vaak teruggekeerd naar de slides van bepaalde lessen.
   6. https://www.w3schools.com/howto/howto_css_sticky_element.asp
   7. https://flexboxfroggy.com/#nl
+  8. https://www.stussy.co.uk/
 
 
 </details>
