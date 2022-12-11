@@ -132,11 +132,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/breakdownhome" width="375px" alt="breakdown van de hele pagina">
-  <img src="readme-images/breakdownproductpage" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownhome.jpeg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownproductpage.jpeg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/breakdownpopup" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownpopup.jpeg" width="375px" alt="breakdown van een dynamisch deel">
 
 
 </details>
@@ -151,26 +151,25 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  eerste les gemist vanwege fysieke gesteldheid.
+  wel bij kunnen blijven met het huiswerk en de intro opdracht.
+
+  goed kunnen oefenen met flexbox
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | kars           | naomi.             | tico.        | brett            |
+  |html doornemen  | html doornemen     |html doornemen|html doornemen    |
+   eerste css                                            hulp met breakdown
+   doorlopen             
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ik heb vooral veel gehad aan de feedback aan mijn klasgenotem. zelf had ik nog niks op papier of online.
+het doornemen van onze html's heeft me wel verder op weg geholpen.
 
 </details>
 
@@ -184,17 +183,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  header plus footer af (html en gestijld in css)
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+Tico
+
+Kars
+
+Naomi
+
+Brett
 
 
   ### Verslag van meeting
