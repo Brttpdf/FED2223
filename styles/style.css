@@ -357,11 +357,18 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   top: 25%;
 }
 /** small variation images */
-.product section div:nth-child(2) div img {
+.product section div:nth-child(2) div a {
   max-width: 50px;
   display: inline-flex;
   gap: 10px;
 }
+/** small variation images */
+.product section div:nth-child(2) div > a > img {
+ object-fit:contain;
+ height:100%;
+ width:100%;
+}
+
 /** tweede div in de eerste sectie */
 .product section div:nth-child(2) div div {
   display: flex;

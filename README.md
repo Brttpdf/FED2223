@@ -40,14 +40,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://eu.stussy.com
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/Scherm1" width="375px" alt="Landing page Stussy">
-   <img src="readme-images/scherm1nieuw" width="375px" alt="Landing page Stussy">
-     <img src="readme-images/scherm1deel2" width="375px" alt="Landing page Stussy">
+  <img src="readme-images/Scherm1.jpeg" width="375px" alt="Landing page Stussy">
+   <img src="readme-images/scherm1nieuw.jpeg" width="375px" alt="Landing page Stussy">
+     <img src="readme-images/scherm1deel2.jpeg" width="375px" alt="Landing page Stussy">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/Scherm2" width="375px" alt="Productpagina T shirt Stussy">
-  <img src="readme-images/scherm2productpagina" width="375px" alt="Productpagina T shirt Stussy">
+  <img src="readme-images/Scherm2.jpeg" width="375px" alt="Productpagina T shirt Stussy">
+  <img src="readme-images/scherm2productpagina.jpeg" width="375px" alt="Productpagina T shirt Stussy">
  
 </details>
 
@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
   
-  1. veel afbeeldingen zijn niet gelabeld en eer is voor sommige afbeeldingen niet duidelijk wat voor 
+  1. veel afbeeldingen zijn niet gelabeld en er is voor sommige afbeeldingen niet duidelijk wat voor 
    afbeelding het is zonder naar de afbeelding te kijken
 
   2. Er zijn niet altijd states gebruikt voor de knoppen
@@ -119,8 +119,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ 1. doordat mijn site zwart wit is en dus een hoog contrast heeft tussen de elementen vind ik het niet heel interessant om de site te verbeteren op visueel gebied.
+    omdat is geblijken uit mijn eerdere onderzoek dat vrijwel elke bijwerking (dus ooik visueel) baat zou hebben bij een goed werkende screenreader met een goede en 
+     duidelijke focus ga ik mij hier op focussen. 
 
 </details>
 
@@ -184,27 +185,25 @@ het doornemen van onze html's heeft me wel verder op weg geholpen.
 
   ### Stand van zaken
   header plus footer af (html en gestijld in css)
+  vragen hoe ik mijn section het best kan indelen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-Tico
+gezamelijke pinpoints tijdens voortgangsgesprek:
 
-Kars
+alles even door kijken en vragen wat ons nog te wachten staat.
+vragen wat we nog moeten doen voor een voldoende
 
-Naomi
-
-Brett
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+ik had een aantal vragen die ik goed achteraf zelf op heb kunnen lossen door nog eens de huiswerk opdrachten te maken.
+aan de slag met grid huiswerk. en beginnen met productpagina.
+
 
 </details>
 
@@ -220,28 +219,42 @@ Brett
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  1. de oplossingen die ik na test 1 heb bedacht zijn nuttig en werken erg goed voor vrijwel elke beperking.
+
+  2. er waren geen tot weinig states toegevoegd aan de site van stussy. Dit heb ik wel gedaan en dit werkt goed en duidelijk.
+
+  3. door de oplossingen die ik heb toegepast heb ik de tekst in de huisstijl van stussy kunnen houden. (klein)
+
+
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ door alle elementen beter te omschrijven voor de screenreader is het makkelijker te begrijpen wat er staat zonder naar de afbeelding te kijken.
+ alle elementen worden gelezen door de screenreader en dit werkt goed (beter dan de originele site)
+ 
+ NOTE: Socials iconen in de footer nog even leesbaar maken voor de voice over.
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  door de focus toe te hebben gepast is het makkelijker om de site te gebruiken dan met de muis wanneer de gebruiker schokken krijgt. 
+  ik heb dit uiteraard getest op verschillende toetsenborden. de lastigste om te gebruiken was een macbook. De knoppen van een macbook zijn lastig een voor een in te  
+   drukken omdat er weinig kracht nnodig is en de knoppen zijn plat. 
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+ zoals hierboven en in de eerste toegangkelijkheids test te hebben vermeld is de kleine tekst van de stussy site deel van de huisstijl. Ik moest hier dus een andere 
+  oplossing voor vinden voor mensen die moeilijk individuele knoppen konden bereiken met de muis. ik heb een focus toegevoegd en alle afbeeldingen duidelijke 
+   omschrijvingen in de html gegeven waardoor ook mensen met een slechter motoriek door de website heen kunnen tabben.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+   1. doordat mijn site zwart wit is en dus een hoog contrast heeft tussen de elementen vind ik het niet heel interessant om de site te verbeteren op visueel gebied.
+    omdat is geblijken uit mijn eerdere onderzoek dat vrijwel elke bijwerking (dus ooik visueel) baat zou hebben bij een goed werkende screenreader met een goede en 
+     duidelijke focus ga ik mij hier op focussen. 
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -255,26 +268,30 @@ Brett
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik heb mijn site zo goed als af kunnen krijgen. ik ga naar dit voortgangsgesprek om even te kijken of de studentassistenten nog opmerkingen of verbeterpounten voor 
+   mij hebben.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+tico wilt graag uitleg over mediaquery en zijn site doornemen.
 
+naomi 'heeft nog wat specifieke vragen
+
+kars wilt zijn html en css doorlopen en vragen wat het beste is om de vaart erin te houden.
+
+ik wil graag mijn site doorlopen en vragen of er wat op aan te merken is door de student asstistenten. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+ik had bij sommige elementen een figure gebruikt om de elementen op hun plek te krijgen, dit kon beter. 
+ik moest hier gewoon gebruik maken van een div. ik zat hier fout omdat ik dacht dat ik helemaal geen divs mocht gebruiken.
+
+er kwam uit dat ik nog wat beter mijn elementen had kunnen specificeren in de html.
+
+website was nog niet 10000% responsive, dit was wel erg snel verholpen.
 
 </details>
 
@@ -288,19 +305,37 @@ Brett
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/eindresultaat.jpeg" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ik heb hoewel ik het nog steeds heel lastig vind alle css selectoren juist neergezet. (nadat het 1000x mis is gegaan)
+
+  ik heb flexbox erg goed onder de knie gekregen naar mijn idee.
+
+  ik heb een hoop nieuwe css properties geleerd
+
+  ik heb geleerd goed gebruik te maken van de 'element inspecteren tool'
+
+
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  ik vind het nog steeds erg lastig om html en css te lezen (aan elkaar te koppelen)
+  ik moet echt 3x kijken om te zien wat er nou precies allemaal staat en wat wat doet. Als ik er mee bezig ben gaat het wel, totdat ik ergens een probleem heb staamn 
+  en terug moet zoeken in mijn code waar het nou precies mis gaat allemaal.
+
+  ik vind responsiveness nog erg lastig om goed te krijgen. dit is me gelukkig wel gelukt
+
+  ik vind elementen positioneren nog steeds niet te doen.... 
+  
+  wat ik op heb kunnen leveren wat mijn site betreft ben ik erg trots op. ik had alleen wel meer tijd mogen besteden aan mijn proces verslag d.m.v. bijvoorbeeld 
+   plaatsjes en voorbeelden, hier ben ik mij van bewust.§
+
+
 </details>
 
 
@@ -314,8 +349,13 @@ Brett
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://docs.emmet.io/cheat-sheet/
+  2. https://icons.getbootstrap.com
+  3. https://htmlcheatsheet.com/css/
+  4. natuurlijk de studentassistenten ;)
+  5. https://dlo.mijnhva.nl/d2l/le/content/437099/Home. ik ben vaak teruggekeerd naar de slides van bepaalde lessen.
+  6. https://www.w3schools.com/howto/howto_css_sticky_element.asp
+  7. https://flexboxfroggy.com/#nl
+
 
 </details>
