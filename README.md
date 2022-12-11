@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Surface Plane
+  Responsive Plane
  
 </details>
 
@@ -41,10 +41,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
   <img src="readme-images/Scherm1" width="375px" alt="Landing page Stussy">
+   <img src="readme-images/scherm1nieuw" width="375px" alt="Landing page Stussy">
+     <img src="readme-images/scherm1deel2" width="375px" alt="Landing page Stussy">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
   <img src="readme-images/Scherm2" width="375px" alt="Productpagina T shirt Stussy">
+  <img src="readme-images/scherm2productpagina" width="375px" alt="Productpagina T shirt Stussy">
  
 </details>
 
@@ -57,24 +60,62 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  1. veel afbeeldingen zijn niet gelabeld en eer is voor sommige afbeeldingen niet duidelijk wat voor 
+   afbeelding het is zonder naar de afbeelding te kijken
+
+  2. Er zijn niet altijd states gebruikt voor de knoppen
+
+  3. Teksten zijn redelijk klein. (stussy huisstijl dus wellicht andere oplossing voor vinden)
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+ 1. Veel afbeeldingen zijn niet gelabeld en zijn dus niet duidelijk voor de screenreader
+
+ 2. Veel knoppen met namen die niet te begrijpen zijn door alleen de naam te horen bijvoorbeeld: 'Chapters'
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+ 1. Afbeeldingen en knoppen dienen goed gelabeld te worden zodat deze wel duidelijk zullen zijn op mijn  eigen 
+  site
+
+ 2. sommige knoppen zoals 'chapters' kunnen we weglaten omdat deze kunnen zorgen voor ruis bij mensen die de   
+  screenreader gebruiken
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
+ 1. de knoppen op de stussy site zijn redelijk klein en dus 
+  wellicht lastig om aan te klikken met de muis. 
+
+ 2. sommige knoppen zijn disabled bij bijvoorbeeld uitverkochte 
+  producten. hhier zou ik evt een melding kunnen maken ipv de knop 
+   te disablen omdat dit voor verwarring kan zorgemn
+
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  1. aangezien het huisstijl is van stussy om de tekst klein te   
+   houden moet ik hier een andere oplossing voor bedenken. door 
+    gebruik te maken van een goede focus sla ik twee vliegen in 
+    een klap. mensen die moeilijk hun muis kunnen bedienen 
+    kunnen dan gebruik maken van de tab knop en duidelijk zien 
+    welk element zij geselecteerd hebben.
+
+  2. ik zorg ervoor dat ik geen knoppen disable op de pagina om   
+  verwarring te voorkomen.
 
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  1. zoals hierboven vermeld zijn de knoppen redelijk klein en dus 
+   in sommige gevallen lastig aan te klikken. door een goede focus 
+    te gebruiken kunnen mensen die geen goede controle hebben 
+     over hun muis alsnog simpel door de website heen tabben.
 
+  2. ook mensen met handen die anders werken dan normaal (elastiekjes) kunnen door te tabben de website gebruiken.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -91,13 +132,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownhome" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownproductpage" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/breakdownpopup" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 

@@ -1,34 +1,488 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
-button, summary {
-	cursor: pointer;
+button,
+summary {
+  cursor: pointer;
 }
-
-
-
-
 
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
+
+/** variables */
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+  --color-text: #111;
+  --color-background: #fff;
+  --font-primary: "Helvetica", "Arial", sans-serif;
+  --font-small: 0.6875rem;
+  --header-height: 65px;
+  --topbar-height: 32px;
 }
 
+/** overall styling */
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+}
 
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
 
+a:focus-visible {
+  padding: 4px;
+  border: 7px dotted rgb(178, 12, 128);
+  outline: none;
+}
 
+a:active {
+  border: 5px black;
+  outline: 5px;
+  color: blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /****************/
-/* JOUW STYLING */
+/* CUSTOM STYLING */
 /****************/
 
-/* jouw code */
+/** topbar */
+body > p:nth-of-type(1) {
+  width: 100%;
+  background-color: black;
+  padding: 0.625rem 1.25rem;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  font-weight: 300;
+  position: fixed;
+  height: var(--topbar-height);
+  top: 0;
+  z-index: 10;
+}
 
+/** logo */
+header a svg {
+  width: 60px;
+}
+/** header */
+header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0 1.25rem;
+  position: fixed;
+  margin-top: 32px;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-background);
+  top: 0;
+  z-index: 10;
+}
+
+/** navigatie menu in header */
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0;
+  flex-grow: 1;
+}
+/** overall styling voor de ul'tjes in de header nav */
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+/** Padding op elke link rechter kant behalve in de laatste ul van de header nav*/
+header nav ul:last-of-type li:not(:last-of-type) {
+  padding-right: 15px;
+}
+/** overall styling voor alle links in de header nav */
+header nav ul li {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+  letter-spacing: 0.03em;
+  line-height: 1;
+}
+/** styling voor de ul direct in de eerste sectie in de main content */
+section:first-of-type > ul {
+  max-width: 65%;
+  display: grid;
+  margin: calc(var(--header-height) + var(--topbar-height)) auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+/** styling voor de aparte li elementen in de grid op de homepagina */
+section ul li {
+  aspect-ratio: 3/4;
+  z-index: 1;
+}
+/** maakt de link in de aparte li's volledige hoogte */
+section ul li a {
+  height: 100%;
+  position: relative;
+}
+
+/** styling voor de titel in het li element van de grid */
+section ul li a h1 {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+/** hover styling title */
+section ul li a:hover h1 {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+/** witte achtergrond titel maar onzichtbaar */
+section ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.2s ease-in-out;
+}
+/** maak witte achtergrond zichtbaar */
+section ul li a:hover::after {
+  opacity: 0.5;
+  transition: opacity 0.2s ease-in-out;
+}
+/** foto in de li van de grid */
+section ul li img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/** positie pop up java */
+main section:last-of-type {
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+}
+/** verstop de popup sectie wanneer hij .hidden krijgt van java */
+main section:last-of-type.hidden {
+  display: none;
+}
+
+/** zwarte background van de popup */
+main section:last-of-type::after {
+  content: "";
+  position: fixed;
+  z-index: 998;
+  inset: 0;
+  background-color: black;
+  opacity: 0.4;
+}
+/** witte sectie in de popup */
+main section:last-of-type > div {
+  width: 30%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 20px 30px 30px;
+  margin: 0;
+}
+/** div met popup titel en kruisje */
+main section:last-of-type div > div {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/** tekst elementen in de popup */
+main section:last-of-type p {
+  text-transform: uppercase;
+  font-size: var(--font-small);
+}
+/** tekst element van de gekozen shipping county */
+main section:last-of-type > div > p:first-of-type {
+  opacity: 0.4;
+}
+/** standaard styling weg van de popup */
+main section:last-of-type div button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+/** save knop van de popup */
+main section:last-of-type > div > button {
+  display: block;
+  background-color: black;
+  padding: 15px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  color: white;
+  width: 100%;
+}
+
+/** kruisje popup */
+main section:last-of-type > div > div button svg {
+  width: 30px;
+  height: 30px;
+}
+
+/** footer */
+footer {
+  font-size: var(--font-small);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+/** positionering van de elementen social nav in de footer */
+footer nav:first-of-type ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: end;
+}
+/** social icons */
+footer nav:first-of-type svg {
+  fill: black;
+  width: 15px;
+}
+/** second nav in de footer */
+footer nav:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/** mmaak elke kolom de zelfde breedte footer nav flex */
+footer nav:nth-of-type(2) > * {
+  flex: 1;
+}
+/** center copyright text */
+footer nav:nth-of-type(2) > p:nth-of-type(1) {
+  text-align: center;
+}
+/** horizontal align footer nav's */
+footer nav:nth-of-type(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+/** align eerste footer menu aan het begin */
+footer nav:nth-of-type(2) ul:nth-of-type(1) {
+  justify-content: flex-start;
+}
+/** align laatste footer menu end */
+footer nav:nth-of-type(2) ul:nth-of-type(2) {
+  justify-content: flex-end;
+}
+/** geef padding aan alle elementen behalve de laatste */
+footer nav:nth-of-type(2) ul li:not(:last-of-type) {
+  padding-right: 15px;
+}
+
+/*************************/
+/* PRODUCT PAGE STYLING */
+/*************************/
+
+/** declare section width */
+.product section:first-of-type {
+  max-width: 65%;
+  display: flex;
+  margin: calc(var(--header-height) + var(--topbar-height)) auto;
+}
+/** target de divs binnen de eerste section */
+.product section:first-of-type div {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/** maak eerste div in section bepaalde breedte */
+.product section > div:nth-child(1) {
+  max-width: 65%;
+}
+/** maak eerste div in section bepaalde breedte */
+.product section div:nth-child(2) {
+  max-width: 35%;
+}
+/** maak tweede div sticky halverwege pagina*/
+.product section div:nth-child(2) > div {
+  position: sticky;
+  position: -webkit-sticky;
+  margin: 0;
+  display: block;
+  min-width: 70%;
+  top: 25%;
+}
+/** small variation images */
+.product section div:nth-child(2) div img {
+  max-width: 50px;
+  display: inline-flex;
+  gap: 10px;
+}
+/** tweede div in de eerste sectie */
+.product section div:nth-child(2) div div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
+}
+/** add to cart knop */
+.product section div:nth-child(2) > div button {
+  background-color: black;
+  display: block;
+  padding: 17px 25px;
+  width: 100%;
+  margin-top: 15px;
+  color: white;
+  border: none;
+  margin-bottom: 60px;
+}
+/** S M L XL knoppen */
+.product section div:nth-child(2) div div > button {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+  aspect-ratio: 1;
+  width: 45px;
+  font-weight: bold;
+  margin: 0;
+  color: black;
+}
+/** maak product titel CAPS */
+.product section div:nth-child(2) div p:first-of-type {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/** alle <p> elementen in het sticky menu */
+.product section div:nth-child(2) div p {
+  font-size: 0.7rem;
+}
+/** <a> elementen in het sticky menu */
+.product section div:nth-child(2) div a {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 0.7rem;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+/** geef margin aan eerste <a> element in de sticky nav */
+.product section div:nth-child(2) div a:first-of-type {
+  margin-top: 30px;
+}
+/** maak fotos in linker column full width */
+.product section div:nth-child(1) img {
+  width: 100%;
+  display: block;
+}
+
+/** responsive styling mobile */
+@media screen and (max-width: 768px) {
+  header > a:first-of-type {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+  section:first-of-type ul {
+    max-width: 100%;
+    display: grid;
+    margin: calc(var(--header-height) + var(--topbar-height)) 1.25rem;
+  }
+
+  section > ul:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 60px;
+  }
+
+  section ul li a h1 {
+    margin: 15px 0px;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+  }
+  footer nav:first-of-type ul {
+    justify-content: center;
+  }
+  footer nav:nth-of-type(2) {
+    flex-direction: column;
+  }
+
+  /** product page responsive styling */
+
+  .product section:first-of-type {
+    max-width: 100%;
+    margin: calc(var(--header-height) + var(--topbar-height)) 1.25rem;
+    flex-direction: column;
+  }
+  .product section div:nth-child(2) {
+    max-width: 100%;
+  }
+  .product section div:nth-child(2) > div {
+    position: initial;
+    min-width: 100%;
+  }
+
+  /** outer*/
+  .product section > div:nth-child(1) {
+    max-width: 100%;
+  }
+  .product section > div:nth-child(1) div img {
+    width: 100%;
+  }
+}
