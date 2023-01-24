@@ -24,6 +24,8 @@ summary {
   --font-small: 0.6875rem;
   --header-height: 65px;
   --topbar-height: 32px;
+  --h1-font-size: 0.9rem;
+  --h2-font-size: 0.7rem;
 }
 
 /** overall styling */
@@ -141,18 +143,19 @@ section:first-of-type > ul {
 }
 
 /** styling voor de aparte li elementen in de grid op de homepagina */
-section ul li {
+body:not(.product) section:first-of-type > ul li {
   aspect-ratio: 3/4;
   z-index: 1;
 }
+
 /** maakt de link in de aparte li's volledige hoogte */
-section ul li a {
+body:not(.product) section:first-of-type > ul li a {
   height: 100%;
   position: relative;
 }
 
 /** styling voor de titel in het li element van de grid */
-section ul li a h1 {
+body:not(.product) section:first-of-type > ul li a h1 {
   margin: 0;
   height: 100%;
   width: 100%;
@@ -168,12 +171,12 @@ section ul li a h1 {
   transition: opacity 0.2s ease-in-out;
 }
 /** hover styling title */
-section ul li a:hover h1 {
+body:not(.product) section:first-of-type > ul li a:hover h1 {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
 }
 /** witte achtergrond titel maar onzichtbaar */
-section ul li a::after {
+body:not(.product) section ul li a::after {
   content: "";
   position: absolute;
   top: 0;
@@ -331,6 +334,7 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   max-width: 65%;
   display: flex;
   margin: calc(var(--header-height) + var(--topbar-height)) auto;
+  gap: 30px;
 }
 /** target de divs binnen de eerste section */
 .product section:first-of-type div {
@@ -356,17 +360,22 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   min-width: 70%;
   top: 25%;
 }
+/** small variation ul **/
+.product section div:nth-child(2) > div ul:first-of-type {
+  display: flex;
+  gap: 10px;
+}
+
 /** small variation images */
-.product section div:nth-child(2) div a {
+.product section div:nth-child(2) > div ul:first-of-type li a {
   max-width: 50px;
   display: inline-flex;
-  gap: 10px;
 }
 /** small variation images */
 .product section div:nth-child(2) div > a > img {
- object-fit:contain;
- height:100%;
- width:100%;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 /** tweede div in de eerste sectie */
@@ -377,7 +386,7 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   margin-top: 15px;
 }
 /** add to cart knop */
-.product section div:nth-child(2) > div button {
+.product section div:nth-child(2) > div > button {
   background-color: black;
   display: block;
   padding: 17px 25px;
@@ -387,8 +396,20 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   border: none;
   margin-bottom: 60px;
 }
+
+/** list style onder de add to cart knop **/
+.product section div:nth-child(2) > div ul:nth-of-type(3) {
+  list-style-type: "- ";
+  padding-left: 10px;
+}
+
+/** list element voor S M L XL knoppen **/
+.product section div:nth-child(2) > div ul:nth-of-type(2) {
+  display: flex;
+  gap: 10px;
+}
 /** S M L XL knoppen */
-.product section div:nth-child(2) div div > button {
+.product section div:nth-child(2) > div ul:nth-of-type(2) > li > button {
   border: 1px solid black;
   padding: 10px;
   background-color: white;
@@ -399,7 +420,8 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
   color: black;
 }
 /** maak product titel CAPS */
-.product section div:nth-child(2) div p:first-of-type {
+.product section div:nth-child(2) > div h1:first-of-type {
+  font-size: var(--h1-font-size);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -423,6 +445,17 @@ footer nav:nth-of-type(2) ul li:not(:last-of-type) {
 .product section div:nth-child(1) img {
   width: 100%;
   display: block;
+}
+
+.product section:nth-of-type(2) {
+  text-align: center;
+}
+.product section:nth-of-type(2) h2 {
+  font-size: var(--h2-font-size);
+  margin-bottom: 25px;
+}
+.product section:nth-of-type(2) video {
+  max-width: 100%;
 }
 
 /** responsive styling mobile */

@@ -336,6 +336,22 @@ website was nog niet 10000% responsive, dit was wel erg snel verholpen.
    plaatsjes en voorbeelden, hier ben ik mij van bewust.
 
 
+ Herkansing
+
+voor mijn herkansing moest ik 2 kleine aanpassingen doen.
+Ik moest de semantiek van mijn paginas verbeteren en om zeker te zijn van een voldoende moest ik een filmpje toevoegen. wat ik dus heb gedaan is:
+
+Een div veranderd naar een unordered list.
+
+Lijstje dat als een p stond veranderd in een ul
+
+Heading levels verbeterd en gewijzigd
+
+Filmpje toe gevoegd
+
+en titels gegeven aan de SVG plaatjes zodat deze herkenbaar worden gemaakt voor de screenreader
+
+
 </details>
 
 
